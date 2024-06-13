@@ -57,11 +57,11 @@ const exp = [
 
 export default function Home() {
   return (
-    <main className="manrope">
-      <div className="md:h-auto h-[90vh] md:px-9 px-3">
-        <div className="h-2/3 relative">
-          <div className="absolute -z-[100] md:hidden block">
-            {/* <Image className="w-[100%]" src={landingImg} /> */}
+    <main className="manrope relative">
+      <div className="md:h-0vh] h-[90vh] md:px-9 px-3">
+        <div className="h-2/3 ">
+          <div className="absolute -z-[100] top-[200px] -left-[100px] border md:block hidden">
+            <Image className="w-[500px]" src={landingImg} />
           </div>
           <div className="fatface font-bold md:text-9xl text-8xl h-full justify-center leading-[75px] flex flex-col items-end ">
             <div>
@@ -97,7 +97,7 @@ export default function Home() {
           About <br /> Me
         </h1> */}
 
-        <div className=" md:text-2xl leading-normal text-3xl mb-10">
+        <div className=" md:text-5xl md:leading-relaxed leading-normal text-3xl mb-10">
           As a multidisciplinary artist, I bring a whirlwind of creativity 💨 ,
           a knack for thinking outside the box, and a zest for blending
           different artistic flavors into captivating projects 🌼. I thrive on
@@ -118,7 +118,7 @@ export default function Home() {
         <h1 className="mb-5 uppercase text-center text-2xl md:px-9 px-3 md:text-8xl">
           Buzz board
         </h1>
-        <div className="md:px-9 px-3 flex flex-col gap-5">
+        <div className="md:px-9 px-3 flex items-center flex-col gap-5">
           {buzz.map((x) => (
             <Boarditems
               title={x.title}
@@ -153,12 +153,12 @@ export default function Home() {
 
         <div className="aspect-square  md:px-9 px-3">
           <div className="w-full flex ">
-              <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
+              <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 md:m-20 m-2 shadow rounded-md">
             <Link href="/works">
-                <div className="w-[35px] mb-2">
+                <div className="w-[100px] mb-2">
                   <Image src={film} />
                 </div>
-                <div className="text-4xl">Film</div>
+                <div className=" md:text-6xl text-4xl">Film</div>
             </Link>
               </div>
 
@@ -194,11 +194,11 @@ export default function Home() {
       </section>
 
       <section className="mt-20">
-        <div className="text-gray-600 text-center">💖 from Instagram</div>
+        <div className="text-gray-600 text-center md:mb-2">💖 from Instagram</div>
         <Link href="https://www.instagram.com/morenikejiadebola24/">
-          <h1 className=" text-center text-3xl mb-10 md:px-9 px-3 md:text-8xl">
+          <div className=" text-center text-3xl mb-10 md:px-9 px-3 md:text-6xl">
             @morenikejiadebola24
-          </h1>
+          </div>
         </Link>
       </section>
     </main>

@@ -5,7 +5,7 @@ import { RiLinkM } from "react-icons/ri";
 const Boarditems = ({ date, title, desc, href }) => {
   return (
     <Link href={href}>
-      <div className="h-[150px] rounded-md shadow border px-4 py4 flex items-center gap-3 relative">
+      <div className="h-[150px] w-auto md:w-[600px] rounded-md shadow border px-4 py4 flex items-center gap-3 relative">
         {/* <div className='border h-[100px] w-[100px]'>
 
 
