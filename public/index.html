@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to our coffee shop!">
+    <title>Coffee Shop</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Our Coffee Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to the best coffee shop in town! We serve freshly brewed coffee and delicious pastries.</p>
+            <img src="coffee.jpg" alt="A cup of coffee">
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <article>
+                <h3>Coffee</h3>
+                <ul>
+                    <li>Espresso</li>
+                    <li>Latte</li>
+                    <li>Cappuccino</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Pastries</h3>
+                <ol>
+                    <li>Croissant</li>
+                    <li>Muffin</li>
+                    <li>Scone</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a local coffee shop dedicated to serving the finest coffee and pastries. Our ingredients are sourced locally, and we take pride in our community.</p>
+            <aside>
+                <p>Did you know? We offer free refills on all our brewed coffee!</p>
+            </aside>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

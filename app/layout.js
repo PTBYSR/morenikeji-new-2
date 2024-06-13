@@ -1,6 +1,7 @@
 import { Manrope, Abril_Fatface} from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/layout/Nav/Nav";
+import Footer from "@/components/layout/Footer/Footer";
 
 const inter = Manrope({ subsets: ["latin"] });
 const fatface = Abril_Fatface({ subsets: ["latin"],weight: ["400"], });
@@ -13,11 +14,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+
+
+      </head>
       <body className={inter.className}>
         
         <Nav/>
         
         {children}</body>
+        <Footer />
     </html>
   );
 }
