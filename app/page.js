@@ -13,6 +13,7 @@ import Boarditems from "@/components/interface/Boarditems";
 import film from "@/public/theatre.png";
 import fashion from "@/public/fashion.png";
 import poetry from "@/public/poetry.png";
+import Link from "next/link";
 
 const fatface = Abril_Fatface({ subsets: ["latin"], weight: ["400"] });
 
@@ -74,18 +75,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-1/3 flex">
+        <div className="h-1/3 flex justify-end">
           <div className="flex flex-col justify-end">
-            <div className=" font-semibold md:text-2xl text-lg pr-3">
-              As a multidisciplinary artist, I elevate storytelling to new
-              heights by seamlessly merging diverse mediums such as writing,
-              filmmaking, fashion design, and poetry to create a rich and
-              immersive tapestry of artistic expression.
+            {/* <div className=" font-semibold md:text-2xl text-lg pr-3">
+              As a multidisciplinary artist, I bring a whirlwind of creativity, a knack for thinking outside the box, and a zest for blending different artistic flavors into captivating projects. I thrive on weaving together diverse disciplines to craft experiences that spark curiosity, emotion, and delight among audiences.
             </div>
-            <div className="mt-3 text-xl">myemail@gmal.com</div>
+            <div className="mt-3 text-xl">myemail@gmal.com</div> */}
           </div>
 
-          <div className="text-xl w-1/3 justify-end flex flex-col text-right">
+          <div className="mb-10 text-xl w-1/3 justify-end flex flex-col text-right">
             <div>Film</div>
             <div>Fashion</div>
             <div>Strategy</div>
@@ -95,21 +93,16 @@ export default function Home() {
       </div>
 
       <section id="about" className="md:px-9 px-3 pt-32">
-        <h1 className="text-5xl  md:px-9 px-3 md:text-8xl mb-20">
+        {/* <h1 className="text-5xl  md:px-9 px-3 md:text-8xl mb-20">
           About <br /> Me
-        </h1>
+        </h1> */}
 
-        <div className="font-semibold md:text-2xl text-lg text-center mb-10">
-          For the last 3 years, I've been Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quibusdam illo adipisci quisquam sint quasi labore
-          illum minima, excepturi magnam architecto!
-        </div>
-
-        <div className="font-semibold md:text-2xl text-lg text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-          odit distinctio sed alias recusandae ducimus nulla architecto, error
-          consequuntur dignissimos ea aperiam minima placeat adipisci, possimus
-          incidunt iste natus iure..
+        <div className=" md:text-2xl leading-normal text-3xl mb-10">
+          As a multidisciplinary artist, I bring a whirlwind of creativity 💨 ,
+          a knack for thinking outside the box, and a zest for blending
+          different artistic flavors into captivating projects 🌼. I thrive on
+          weaving together diverse disciplines to craft experiences that spark
+          curiosity, emotion, and delight among audiences.
         </div>
 
         <div className="w-full flex justify-center items-center mt-32">
@@ -127,7 +120,12 @@ export default function Home() {
         </h1>
         <div className="md:px-9 px-3 flex flex-col gap-5">
           {buzz.map((x) => (
-            <Boarditems title={x.title} href={x.href} date={x.date} desc={x.desc} />
+            <Boarditems
+              title={x.title}
+              href={x.href}
+              date={x.date}
+              desc={x.desc}
+            />
           ))}
         </div>
       </section>
@@ -155,33 +153,34 @@ export default function Home() {
 
         <div className="aspect-square  md:px-9 px-3">
           <div className="w-full flex ">
-            <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
-              <div className="w-[35px] mb-2">
-                <Image src={film} />
+              <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
+            <Link href="/works">
+                <div className="w-[35px] mb-2">
+                  <Image src={film} />
+                </div>
+                <div className="text-4xl">Film</div>
+            </Link>
               </div>
-              <div className="text-4xl">Film</div>
-            </div>
 
-            <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 m-2 shadow rounded-md ">
-
-
-            <div className="w-[35px] mb-2">
-                <Image src={fashion} />
+              <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 m-2 shadow rounded-md ">
+            <Link href="/works">
+                <div className="w-[35px] mb-2">
+                  <Image src={fashion} />
+                </div>
+                <div className="text-4xl">Fashion</div>
+            </Link>
               </div>
-              <div className="text-4xl">Fashion</div>
-            </div>
           </div>
 
           <div className="w-full flex ">
-            <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
-            <div className="w-[35px] mb-2">
-                <Image src={poetry} />
+              <div className="aspect-square border px-5 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
+            <Link href="/works">
+                <div className="w-[35px] mb-2">
+                  <Image src={poetry} />
+                </div>
+                <div className="text-4xl">Poetry</div>
+            </Link>
               </div>
-              <div className="text-4xl">Poetry</div>
-
-            </div>
-
-
 
             {/* <div className="aspect-square border px-3 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
 
@@ -192,6 +191,15 @@ export default function Home() {
             </div> */}
           </div>
         </div>
+      </section>
+
+      <section className="mt-20">
+        <div className="text-gray-600 text-center">💖 from Instagram</div>
+        <Link href="https://www.instagram.com/morenikejiadebola24/">
+          <h1 className=" text-center text-3xl mb-10 md:px-9 px-3 md:text-8xl">
+            @morenikejiadebola24
+          </h1>
+        </Link>
       </section>
     </main>
   );

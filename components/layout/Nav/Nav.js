@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import React , {useState} from "react";
-
+import logo from '@/public/logo.jpg'
 import { Fade as Hamburger } from "hamburger-react";
+import Image from "next/image";
 
 const Nav = () => {
 
@@ -16,9 +17,13 @@ const Nav = () => {
   };
   return (
     <div className=" px-3   pt-2  md:px-9 flex justify-between items-center ">
-      <div className="z-20">
-        <logo>logo</logo>
-      </div>
+        <div className="z-20 mt-1">
+      <Link href="/">
+          <div className="w-20">
+          <Image src={logo} />
+          </div>
+      </Link>
+        </div>
       <nav className="    h-[80px] hidden md:flex items-center">
         <ul className="flex gap-10">
           <li>
@@ -33,7 +38,7 @@ const Nav = () => {
         </ul>
       </nav>
       <div   onClick={toggleNavbar} className="block md:hidden z-20      ">
-        <Hamburger size={18} />
+        <Hamburger size={25} />
       </div>
       <nav className="md:hidden flex bg-white absolute w-full left-0 top-0">
         {/* <ul className="flex gap-10 flex-col w-full  px-3 "> */}
