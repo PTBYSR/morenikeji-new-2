@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
 
 
       </head>
-      <body className={inter.className}>
+      <body style={{"position":"relative"}} className={inter.className}>
         <div className="absolute w-full">
         <Nav/>
 
