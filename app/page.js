@@ -87,7 +87,7 @@ export default function Home() {
             <div className="mt-3 text-xl">myemail@gmal.com</div> */}
           </div>
 
-          <div className="mb-10 text-xl gap-2  w-1/3 justify-end flex flex-col text-right">
+          <div className="mb-20 text-xl gap-2  w-1/3 justify-end flex flex-col text-right">
             <div className=""><Link href="/works"><span className="underline-animation">Film</span></Link></div>
             <div className=""> <Link href="/works"><span className="underline-animation">Fashion</span></Link> </div>
             <div className=""> <Link href="/works"><snap className="underline-animation">Strategy</snap></Link> </div>
