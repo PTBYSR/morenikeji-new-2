@@ -24,8 +24,10 @@ export default function RootLayout({ children }) {
 
       </head>
       <body className={inter.className}>
-        
+        <div className="absolute w-full">
         <Nav/>
+
+        </div>
         
         {children}</body>
         <Footer />

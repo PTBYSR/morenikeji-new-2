@@ -58,12 +58,14 @@ const exp = [
 export default function Home() {
   return (
     <main className="manrope relative">
-      <div className="md:h-0vh] h-[90vh] md:px-9 px-3">
+      <div className="md:h-0vh] h-screen md:px-9 px-3">
         <div className="h-2/3 ">
           <div className="absolute -z-[100] top-[200px] -left-[100px] border md:block hidden">
             <Image className="w-[500px]" src={landingImg} />
           </div>
           <div className="fatface font-bold md:text-9xl text-8xl h-full justify-center leading-[75px] flex flex-col items-end ">
+
+        
             <div>
               {" "}
               moreni
@@ -83,11 +85,11 @@ export default function Home() {
             <div className="mt-3 text-xl">myemail@gmal.com</div> */}
           </div>
 
-          <div className="mb-10 text-xl w-1/3 justify-end flex flex-col text-right">
-            <div>Film</div>
-            <div>Fashion</div>
-            <div>Strategy</div>
-            <div>Consulting</div>
+          <div className="mb-10 text-xl gap-2  w-1/3 justify-end flex flex-col text-right">
+            <div className=""><Link href="/works"><span className="underline-animation">Film</span></Link></div>
+            <div className=""> <Link href="/works"><span className="underline-animation">Fashion</span></Link> </div>
+            <div className=""> <Link href="/works"><snap className="underline-animation">Strategy</snap></Link> </div>
+            <div className=""> <Link href="/works"><span className="underline-animation">Consulting</span></Link> </div>
           </div>
         </div>
       </div>

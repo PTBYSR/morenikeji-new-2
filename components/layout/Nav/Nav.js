@@ -19,7 +19,7 @@ const Nav = () => {
     <div className="manrope px-3   pt-2  md:px-9 flex justify-between items-center ">
         <div className="z-20 mt-1">
       <Link href="/">
-          <div className="w-20">
+          <div className="w-12">
           <Image src={logo} />
           </div>
       </Link>
