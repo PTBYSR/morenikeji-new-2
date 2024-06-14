@@ -16,7 +16,7 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="manrope px-3   pt-2  md:px-9 flex justify-between items-center ">
+    <div className="absolute w-full manrope px-3   pt-2  md:px-9 flex justify-between items-center ">
         <div className="z-20 mt-1">
       <Link href="/">
           <div className="w-12">
