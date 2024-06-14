@@ -1,81 +1,13 @@
 "use client"; // This is a client component 👈🏽
 
-import React, { useRef, useEffect, useState } from 'react';
-import film from "@/public/morenikeji-about-3.jpg";
-import fashion from "@/public/morenikeji-about-3.jpg";
-import poetry from "@/public/morenikeji-about-3.jpg";
-
-
-const images = [
-  film, fashion, poetry
-]
-
-
-
-
-
-
-
-const ImageSlideshow = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slideshowRef = useRef(null);
-
-  const handleScroll = () => {
-    if (slideshowRef.current) {
-      const scrollTop = window.scrollY;
-      const newSlide = Math.min(
-        Math.floor(scrollTop / window.innerHeight),
-        images.length - 1
-      );
-      setCurrentSlide(newSlide);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div className="slide-container" ref={slideshowRef}>
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className="slide"
-          style={{
-            transform: `translateX(-${currentSlide * 100}%)`,
-            backgroundImage: `url(${image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-          }}
-        />
-      ))}
-    </div>
-  );
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+import React, { useRef, useEffect, useState } from "react";
 
 const page = () => {
+
   return (
-    <div className="h-[70vh] px-3 md:px-9 ">
-
-
-{/* <div className="app">
+    <>
+      <div className="h-[70vh] px-3 md:px-9 ">
+        {/* <div className="app">
       <ImageSlideshow />
       <div className="content mt-96 p-8">
         <h1 className="text-4xl font-bold">Content Below Slideshow</h1>
@@ -85,15 +17,17 @@ const page = () => {
       </div>
     </div> */}
 
-
-      <section       className="h-full flex items-center"   >
-        <div className="flex gap-5 flex-col">
-        <h1 className="text-5xl">Coming soon</h1>
-        <div className="w-2/3">Have a project that you think I can help with? Shoot me an email & get started right away! </div>
-
-        </div>
-      </section>
-    </div>
+        <section className="h-full flex items-center">
+          <div className="flex gap-5 flex-col">
+            <h1 className="text-5xl">Coming soon</h1>
+            <div className="w-2/3">
+              Have a project that you think I can help with? Shoot me an email &
+              get started right away!{" "}
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 };
 

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
+    "framer-motion": "^11.2.10",
     "hamburger-react": "^2.5.1",
     "next": "14.2.3",
     "react": "^18",
