@@ -4,6 +4,16 @@
 @tailwind utilities;
 
 
+.animate-note {
+  animation: ping1 1s ease-in-out infinite;
+
+}
+@keyframes ping1 {
+  0%, 100% { transform: translateX(0); }
+  10%, 90% { transform: translateX(-0.4px); }
+  20%, 80% { transform: translateX(0.4px); }
+}
+
 .slider{
   position: relative;
     height: 500px;
@@ -111,6 +121,14 @@
 }
 
 
+
+/* MUSIC PLAYER */
+
+
+#waveform {
+  width: 100%;
+  max-width:  100%;
+}
 
 
 

@@ -116,7 +116,7 @@ export default function Home() {
 
         <div className="w-full flex justify-center items-center mt-32">
           <div className="w-[350px] relative ">
-            <Image src={aboutImg1} />
+            {/* <Image src={aboutImg1} /> */}
 
             {/* <Image className="absolute -right-[100px] -bottom-[300px]" src={aboutImg2} /> */}
           </div>
@@ -154,7 +154,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section id="works" className="mt-20">
+      {/* <section id="works" className="mt-20">
         <h1 className="text-5xl mb-10 md:px-9 px-3 md:text-8xl">
           Notable
           <br /> Works
@@ -191,16 +191,16 @@ export default function Home() {
             </Link>
               </div>
 
-            {/* <div className="aspect-square border px-3 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
+            <div className="aspect-square border px-3 flex flex-col justify-center w-1/2 m-2 shadow rounded-md">
 
             <div className="w-[40px] mb-2">
                 <Image src={film} />
               </div>
               <div className="text-5xl">Film</div>
-            </div> */}
+            </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="mt-20">
         <div className="text-gray-600 text-center md:mb-2">💖 from Instagram</div>

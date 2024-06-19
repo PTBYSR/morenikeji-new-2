@@ -1,10 +1,28 @@
-import { Manrope, Abril_Fatface} from "next/font/google";
+import { Manrope, Abril_Fatface } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/layout/Nav/Nav";
 import Footer from "@/components/layout/Footer/Footer";
+import MusicPlayer from "@/components/interface/MusicPlayer";
 
 const inter = Manrope({ subsets: ["latin"] });
-const fatface = Abril_Fatface({ subsets: ["latin"],weight: ["400"], });
+const fatface = Abril_Fatface({ subsets: ["latin"], weight: ["400"] });
+
+const audio = [
+  {
+    id: 1,
+    src: "/asabi.mp3",
+    title: "asabi",
+    src: "/asabi.jpg",
+  },
+];
+const tracks = [
+  {
+    id: 1,
+    title: "asabi",
+    src: "/asabi.mp3",
+    img: "/audio/asabi.jpg",
+  },
+];
 
 export const metadata = {
   title: "Create Next App",
@@ -13,24 +31,28 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className="relative" lang="en">
       <head>
-        
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
-
-
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body style={{"position":"relative"}} className={inter.className}>
-        <div className="absolute w-full">
-        <Nav/>
-
+      <div className="z-50 absolute w-screen top-0 h-full right-0">
+        <div className="top-0 z-[1000] sticky w-full">
+          <Nav />
         </div>
-        
-        {children}</body>
-        <Footer />
+        <MusicPlayer tracks={tracks} />
+      </div>
+
+      <body style={{ position: "relative" }} className={inter.className}>
+
+        {children}
+      </body>
+
+      <Footer />
     </html>
   );
 }

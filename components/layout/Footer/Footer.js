@@ -7,7 +7,7 @@ const Footer = () => {
 
 <div className=''>
     <div className='text-gray-300 text-5xl  md:text-6xl'>
-        Let's work 📞
+        Let's work <span class="animate-pulse">📞</span>
     </div>
     <div className='text-base mt-3 text-gray-300'>
         <span className='text-gray-300 font-semibold text-lg'>Click here</span>, let's schedule a discovery call
