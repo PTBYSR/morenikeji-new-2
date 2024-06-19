@@ -99,7 +99,7 @@ const MusicPlayer = ({ tracks }) => {
     <div className={`  transition-transform  ${isVisible ? "bg-gray-500 bg-opacity-40" : ""} 0 top-0 right-0 sticky z-50 border h-screen`}>
       <button
       onClick={toggleVisibility}
-        className={`bg-white ml-3 absolute left-[6px] bottom-[80px] animate-not flex justify-center items-center border ${
+        className={`bg-white ml-3 absolute left-[6px] bottom-[142px] animate-not flex justify-center items-center border ${
           isVisible ? "w-[45px] h-[45px]" : "w-[50px] h-[50px]"
         }   mx-3 rounded-full`}
         >
