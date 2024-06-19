@@ -31,9 +31,12 @@ const MusicPlayer = ({ tracks }) => {
   };
 
   const handleNext = () => {
+    console.log(currentTrackIndex)
     setCurrentTrackIndex((prevIndex) => (prevIndex + 1) % tracks.length);
+    console.log(currentTrackIndex)
     setIsPlaying(false);
     console.log('hi')
+    console.log(audioRef.current)
   };
 
   const handlePrev = () => {

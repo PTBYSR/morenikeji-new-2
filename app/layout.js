@@ -18,9 +18,63 @@ const audio = [
 const tracks = [
   {
     id: 1,
+    title: "Ta Lo Wa Ni Ogba Na?",
+    src: "/audio/talo.mp3",
+    img: "/audio/talo.jpg",
+  },
+  {
+    id: 2,
     title: "asabi",
     src: "/asabi.mp3",
     img: "/audio/asabi.jpg",
+  },
+  {
+    id: 3,
+    title: "Ewa",
+    src: "/audio/ewa.mp3",
+    img: "/audio/ewa.jpg",
+  },
+  {
+    id: 4,
+    title: "Beere",
+    src: "/audio/beere.mp3",
+    img: "/audio/beere.jpg",
+  },
+  {
+    id: 5,
+    title: "Iranti",
+    src: "/audio/iranti.mp3",
+    img: "/audio/iranti.jpg",
+  },
+  {
+    id: 6,
+    title: "Reni",
+    src: "/audio/reni.mp3",
+    img: "/audio/reni.jpg",
+  },
+  {
+    id: 7,
+    title: "Igbo",
+    src: "/audio/igbo.mp3",
+    img: "/audio/igbo.jpg",
+  },
+  {
+    id: 8,
+    title: "Mabinu 1",
+    src: "/audio/mabinu1.mp3",
+    img: "/audio/mabinu1.jpg",
+  },
+  {
+    id: 9,
+    title: "Kofoworola",
+    src: "/audio/kofoworola.mp3",
+    img: "/audio/kofoworola.jpg",
+  },
+  {
+    id: 10,
+    title: "Dehinwawola",
+    src: "/audio/dehinwawola.mp3",
+    img: "/audio/dehinwawola.jpg",
   },
 ];
 
