@@ -121,7 +121,7 @@ const MusicPlayer = ({ tracks }) => {
         {isVisible ? 'Hide Player' : 'Show Player'}
       </button> */}
       <div
-        className={` bg-white border py-4 px-5 shadow m-5 transform transition-transform ${
+        className={`md:w-[400px] bg-white border py-4 px-5 shadow m-5 transform transition-transform ${
           isVisible
             ? "translate-x-0  block"
             : "-translate-x-full  invisible "
@@ -130,7 +130,7 @@ const MusicPlayer = ({ tracks }) => {
         <Image
           width={300}
           height={300}
-          className="w-full"
+          className="w-full "
           src={tracks[currentTrackIndex].img}
         />
         <audio
