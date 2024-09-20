@@ -15,6 +15,7 @@ import fashion from "@/public/fashion.png";
 import poetry from "@/public/poetry.png";
 import Link from "next/link";
 import ImageSlider from "@/components/interface/ImageSlider";
+import Gallery from "@/components/interface/Gallery";
 
 const fatface = Abril_Fatface({ subsets: ["latin"], weight: ["400"] });
 
@@ -60,7 +61,8 @@ export default function Home() {
   return (
     <main className="manrope relative">
 
-      <div className="md:h-0vh] h-screen md:px-9 px-3">
+      <div className=" h-screen md:px-9 px-3">
+      {/* <div className=" md:px-9 px-3 "> */}
         <div className="h-2/3 ">
           <div className="absolute -z-[100] top-[200px] -left-[100px] border md:block hidden">
             <Image className="w-[500px]" src={landingImg} />
@@ -96,8 +98,16 @@ export default function Home() {
         </div>
       </div>
 
+<div className="overflow-hidden">
 
       <ImageSlider />
+      {/* <Gallery /> */}
+
+
+      <div>
+        "Gallery Section here "
+      </div>
+</div>
 
 
 
